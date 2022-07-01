@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:background="#4d1933"
+        android:alpha="0.7"
+        android:gravity="end">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteButton"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="@android:color/transparent"></ImageButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tab_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageList"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/niebo1"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleList"
+        android:padding="10dp"
+        android:text="Tytuł"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionList"
+        android:padding="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="10dp"
+        android:text="Opis..."
+        android:textSize="18sp"
+        android:textStyle="normal"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationList"
+            android:padding="10dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="10dp"
+            android:text="Lokalizacja..."
+            android:textSize="18sp"
+            android:textStyle="normal"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateList"
+        android:padding="5dp"
+        android:text="Data"
+        android:textStyle="italic"></TextView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

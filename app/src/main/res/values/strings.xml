@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dobre Chwile</string>
+    <string name="no_post_hint">Brak wpisów. Dodaj pierwszy wpis poprzez naciśnięcie ikony \"+\"</string>
+</resources>
